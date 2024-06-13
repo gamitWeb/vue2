@@ -8,11 +8,11 @@ stages {
                 script {
                     sh '''
 						# install dependencies
-            sudo apt update -y
+            apt update -y
             
             curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 
-            sudo apt install -y nodejs
+            apt install -y nodejs
 
             # serve with hot reload at localhost:8080
             # npm run dev
