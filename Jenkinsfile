@@ -10,7 +10,8 @@ stages {
 						# install dependencies
             whoami
             #apt update -y
-            
+            sudo su - jenkins
+           
             curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 
             apt install -y nodejs
