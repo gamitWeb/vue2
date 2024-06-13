@@ -8,16 +8,20 @@ stages {
                 script {
                     sh '''
 						# install dependencies
-            npm install
+            sudo apt update -y
+            
+            curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+
+            sudo apt install -y nodejs
 
             # serve with hot reload at localhost:8080
-            npm run dev
+            # npm run dev
 
             # build for production with minification
-              npm run build
+            # npm run build
 
             # build for production and view the bundle analyzer report
-            npm run build --report
+            # npm run build --report
                     '''
                 }
             }
